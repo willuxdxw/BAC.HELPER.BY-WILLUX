@@ -1,0 +1,68 @@
+
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.btn {
+  display: block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #357ab8;
+}
+
+body.economy { background-image: url('images/economy.jpg'); }
+body.science { background-image: url('images/science.jpg'); }
+body.tech { background-image: url('images/tech.jpg'); }
+body.languages { background-image: url('images/languages.jpg'); }
+body.philosophy { background-image: url('images/philosophy.jpg'); }
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
